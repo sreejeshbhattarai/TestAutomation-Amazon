@@ -1,0 +1,103 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-04T23:25:31.809Z",
+        "line": 4,
+        "name": "Search for a product on Amazon",
+        "description": "",
+        "id": "amazon-product-search;search-for-a-product-on-amazon",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8427778900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to Amazon homepage to URL \"http://www.amazon.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.amazon.com/\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinitions.ProductSearchSteps.user_navigates_to_amazon_homepage_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2352184000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enters \"Nikon\" on search text box and presses search button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Nikon\"",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefinitions.ProductSearchSteps.enters_on_search_text_box_and_presses_search_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 785900100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user sorts results in descending order of price",
+            "match": {
+              "location": "StepDefinitions.ProductSearchSteps.user_sorts_results_in_descending_order_of_price()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2202147100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "selects second product from the result",
+            "match": {
+              "location": "StepDefinitions.ProductSearchSteps.selects_second_product_from_the_result()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat StepDefinitions.ProductSearchSteps.user_should_see_text_on_the_product_topic(ProductSearchSteps.java:70)\r\n\tat ✽.user should see text \"Nikon D3X\" on the product topic(file:///C:/Users/cj89e/eclipse-workspace/NordeaHomeTask/src/test/resources/Features/FindAmazonProduct.feature:9)\r\n",
+              "duration": 88762900,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "user should see text \"Nikon D3X\" on the product topic",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Nikon D3X\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinitions.ProductSearchSteps.user_should_see_text_on_the_product_topic(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Amazon Product Search",
+    "description": "  Feature to test product search functionality on Amazon",
+    "id": "amazon-product-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/FindAmazonProduct.feature",
+    "tags": []
+  }
+]

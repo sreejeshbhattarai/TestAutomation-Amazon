@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: StepDefinitions.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.162 sec <<< FAILURE!
+Search for a product on Amazon(Amazon Product Search)  Time elapsed: 14.092 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at StepDefinitions.ProductSearchSteps.user_should_see_text_on_the_product_topic(ProductSearchSteps.java:70)
+	at ✽.user should see text "Nikon D3X" on the product topic(file:///C:/Users/cj89e/eclipse-workspace/NordeaHomeTask/src/test/resources/Features/FindAmazonProduct.feature:9)
+

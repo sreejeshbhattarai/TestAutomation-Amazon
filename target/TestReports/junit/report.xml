@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.12">
+    <testcase classname="Amazon Product Search" name="Search for a product on Amazon" time="13.941">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given user navigates to Amazon homepage to URL "http://www.amazon.com/".....passed
+And enters "Nikon" on search text box and presses search button.............passed
+When user sorts results in descending order of price........................passed
+And selects second product from the result..................................passed
+Then user should see text "Nikon D3X" on the product topic..................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at StepDefinitions.ProductSearchSteps.user_should_see_text_on_the_product_topic(ProductSearchSteps.java:70)
+	at ✽.user should see text "Nikon D3X" on the product topic(file:///C:/Users/cj89e/eclipse-workspace/NordeaHomeTask/src/test/resources/Features/FindAmazonProduct.feature:9)
+]]></failure>
+    </testcase>
+</testsuite>
