@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -34,7 +35,7 @@ public class ProductSearchSteps {
 		driver.navigate().to(string);
 	}
 
-	@Given("enters {string} on search text box and presses search button")
+	@And("enters {string} on search text box and presses search button")
 	public void enters_on_search_text_box_and_presses_search_button(String string) throws InterruptedException {
 		
 		// User passes text on the search box
@@ -56,7 +57,7 @@ public class ProductSearchSteps {
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 	}
 
-	@When("selects second product from the result")
+	@And("selects second product from the result")
 	public void selects_second_product_from_the_result() {
 		
 		// User selects second product from the search results after sorting
