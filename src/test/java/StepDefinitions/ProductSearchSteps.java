@@ -69,9 +69,8 @@ public class ProductSearchSteps {
 
 		// Test step passes if boolean value is returned True
 		assertTrue(driver.findElement(By.xpath("//*[@id=\"title\"]")).getText().contains(string));
-
-		driver.close();
-		driver.quit();
 	}
-
+	
+	driver.close();
+	driver.quit();
 }
